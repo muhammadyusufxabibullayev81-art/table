@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOL | Zamonaviy mebellar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader">
+        <h1>STOL</h1>
+        <div class="loader-line"></div>
+        <p>Sayt yuklanmoqda...</p>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">ST<span>OL</span></a>
+
+            <ul>
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#categories">Kategoriyalar</a></li>
+                <li><a href="#products">Mahsulotlar</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+
+            <button class="cart-button" onclick="openCart()">
+                Savat <span id="cart-count">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="small-title">SIFATLI VA ZAMONAVIY MEBELLAR</span>
+                <h1>Uyingizga <span>go‘zallik</span> olib kiring</h1>
+                <p>
+                    Eng chiroyli yog‘och stollar, qulay mebellar
+                    va zamonaviy dizaynlar. Uyingiz uchun eng
+                    yaxshi tanlov bizda!
+                </p>
+                <a href="#products" class="main-button">Mahsulotlarni ko‘rish</a>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>500+</h3>
+                        <p>Mamnun mijozlar</p>
+                    </div>
+                    <div>
+                        <h3>120+</h3>
+                        <p>Mahsulotlar</p>
+                    </div>
+                    <div>
+                        <h3>5 yil</h3>
+                        <p>Tajriba</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIpgtWJ4vDbETJwm1903wm0pRS8D479LnGCNPxTjxiA&s=10" alt="Zamonaviy yog‘och ish stoli">
+                <div class="image-label">
+                    <h3>Tabiiy go‘zallik</h3>
+                    <p>Har bir detalda sifat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <span>BIZNING TANLOV</span>
+                <h2>Kategoriyalar</h2>
+                <p>O‘zingizga mos mebelni tanlang</p>
+            </div>
+
+            <div class="category-grid">
+                <a href="#products" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyg9_NsW7YvMVtC1LtvaCUEJB3rsGh3HUIjzQCfnlctw&s=10" alt="Ish stollari">
+                    <h3>Ish stollari</h3>
+                    <p>Qulay va zamonaviy</p>
+                </a>
+
+                <a href="#products" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2VpBx8fymJ_U2pnZzTq3PqnYpTct-TE_HmDoJqbNXg&s=10x" alt="Uy mebellari">
+                    <h3>Uy mebellari</h3>
+                    <p>Shinam va chiroyli</p>
+                </a>
+
+                <a href="#products" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw43cVUheTni-yu9RLnkFXbUlaziU7cy_qPwm-TgDlOA&s=10" alt="Stullar">
+                    <h3>Stullar</h3>
+                    <p>Qulay va mustahkam</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-heading">
+                <span>ENG YAXSHI MAHSULOTLAR</span>
+                <h2>Bizning mahsulotlar</h2>
+                <p>Siz uchun tanlangan sifatli mebellar</p>
+            </div>
+
+            <div class="product-tools">
+                <input type="text" id="search" placeholder="Mahsulot nomini qidiring...">
+
+                <select id="category-filter">
+                    <option value="all">Barcha mahsulotlar</option>
+                    <option value="stol">Stollar</option>
+                    <option value="stul">Stullar</option>
+                    <option value="mebel">Mebellar</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-list"></div>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="container discount-content">
+            <div>
+                <span>MAXSUS TAKLIF</span>
+                <h2>Yangi uyga yangi mebellar!</h2>
+                <p>Tanlangan mahsulotlarga 20% gacha chegirma.</p>
+                <a href="#products" class="light-button">Xarid qilish</a>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4D_JjOhTZdz91bphvQagw6mLcHtNx73hkgoQUK0tiA&s=10" alt="Zamonaviy uy interyeri">
+        </div>
+    </section>
+    
+    <section class="section" id="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg2X7KywxpHzETOfZKitya-fk2cGZeKJTut2iwevSQgg&s=10" alt="Chiroyli mebel va uy interyeri">
+            </div>
+
+            <div class="about-text">
+                <span>BIZ HAQIMIZDA</span>
+                <h2>Har bir uyga o‘ziga xos go‘zallik</h2>
+                <p>
+                    YOG‘OCH UY — sifatli va zamonaviy mebellar
+                    taklif qiluvchi do‘kon. Biz mijozlarimizga
+                    qulaylik, mustahkamlik va chiroyli dizaynni
+                    bir joyda taqdim etamiz.
+                </p>
+                <p>
+                    Mahsulotlarimizni tanlashda sifat, qulaylik
+                    va uzoq muddat xizmat qilishiga alohida
+                    e'tibor beramiz.
+                </p>
+                <a href="#contact" class="main-button">Biz bilan bog‘lanish</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section advantages">
+        <div class="container">
+            <div class="section-heading">
+                <span>NEGA AYNAN BIZ?</span>
+                <h2>Bizning afzalliklarimiz</h2>
+            </div>
+
+            <div class="advantage-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">✦</div>
+                    <h3>Yuqori sifat</h3>
+                    <p>Har bir mahsulot sifatli materiallardan tayyorlangan.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">◻</div>
+                    <h3>Yetkazib berish</h3>
+                    <p>Buyurtmalaringizni manzilingizga yetkazamiz.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">♡</div>
+                    <h3>Mijozlar e'tibori</h3>
+                    <p>Har bir mijozimizga alohida e'tibor beramiz.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">✓</div>
+                    <h3>Kafolat</h3>
+                    <p>Mahsulotlarimiz uchun kafolat taqdim etamiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reviews">
+        <div class="container">
+            <div class="section-heading">
+                <span>MIJOZLARIMIZ FIKRI</span>
+                <h2>Ular biz haqimizda nima deydi?</h2>
+            </div>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Stol juda chiroyli va sifatli ekan. Yetkazib berish ham tez bo‘ldi. Rahmat!</p>
+                    <h3>Azizbek</h3>
+                    <span>Toshkent</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Buyurtma qilgan mebelim rasmdagidek keldi. Dizayni juda yoqdi.</p>
+                    <h3>Madina</h3>
+                    <span>Samarqand</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Narxi ham, sifati ham yaxshi. Yana xarid qilishni rejalashtiryapman.</p>
+                    <h3>Jasurbek</h3>
+                    <span>Andijon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq">
+        <div class="container">
+            <div class="section-heading">
+                <span>SAVOLLAR VA JAVOBLAR</span>
+                <h2>Ko‘p so‘raladigan savollar</h2>
+            </div>
+
+            <div class="faq-item">
+                <h3>Buyurtma qanday beriladi?</h3>
+                <p>Mahsulotni savatga qo‘shing va aloqa bo‘limi orqali biz bilan bog‘laning.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Yetkazib berish bormi?</h3>
+                <p>Ha, buyurtmalarni kelishilgan manzilga yetkazib berish mumkin.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mahsulotlarga kafolat beriladimi?</h3>
+                <p>Ha, mahsulot turiga qarab kafolat shartlari mavjud.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Yangiliklardan xabardor bo‘ling</h2>
+            <p>Yangi mahsulotlar va chegirmalar haqida birinchilardan bo‘lib biling.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Elektron pochtangiz" required>
+                <button type="submit">Obuna bo‘lish</button>
+            </form>
+            <p id="newsletter-message"></p>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <span>BIZ BILAN BOG‘LANING</span>
+                <h2>Bizga xabar yuboring</h2>
+                <p>Savollaringiz bo‘lsa, bizga yozing</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="email" placeholder="Elektron pochtangiz" required>
+                <input type="text" placeholder="Telefon raqamingiz">
+                <textarea placeholder="Xabaringiz..." required></textarea>
+                <button type="submit">Xabar yuborish</button>
+                <p id="contact-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h2 class="footer-logo">STOL</h2>
+                <p>Uyingiz uchun sifatli va zamonaviy mebellar.</p>
+            </div>
+
+            <div>
+                <h3>Bo‘limlar</h3>
+                <a href="#home">Bosh sahifa</a>
+                <a href="#products">Mahsulotlar</a>
+                <a href="#about">Biz haqimizda</a>
+                <a href="#contact">Aloqa</a>
+            </div>
+
+            <div>
+                <h3>Aloqa</h3>
+                <p>Telefon: +998 90 123 45 67</p>
+                <p>Manzil: Toshkent, O‘zbekiston</p>
+                <p>Elektron pochta: info@yogochuy.uz</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 YOG‘OCH UY. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Sizning savatingiz</h2>
+                <button onclick="closeCart()" class="close-button">×</button>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                <h3>Jami: <span id="cart-total">0</span> so‘m</h3>
+                <button onclick="checkout()" class="checkout-button">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
